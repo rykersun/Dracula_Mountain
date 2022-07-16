@@ -19,12 +19,12 @@
 
 ## Tools
 
-* i3-gaps
-* picom
-* Rofi
-* Polybar
+* [i3-gaps](https://github.com/Airblader/i3)
+* [picom](https://github.com/jonaburg/picom)
+* [Rofi](https://github.com/davatorium/rofi)
+* [Polybar](https://github.com/polybar/polybar)
 
 ## Wallpaper
-<a href="http://example.com/" target="_blank">![wallpaper](wallpaper/wallpaper.jpg)</a>
+![wallpaper](wallpaper/wallpaper.jpg)
 
 ## Reference
