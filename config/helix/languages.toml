@@ -1,0 +1,13 @@
+[[language]]
+# name = "c"
+# indent = { tab-width = 8, unit = "        " }
+
+name = "c"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+# name = "python"
+# indent = { tab-width = 8, unit = "        " }
+
+name = "python"
+indent = { tab-width = 4, unit = "    " }
