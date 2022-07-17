@@ -17,3 +17,13 @@ libconfig-dev
 libgl-dev
 
 libdbus-1-dev
+
+rofi: 
+
+bison
+
+flex
+
+libxcb-ewmh-dev
+
+libgdk-pixbuf2.0-dev
