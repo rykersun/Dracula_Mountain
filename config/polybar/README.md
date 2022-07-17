@@ -5,6 +5,7 @@
 ```bash
 mv feather/* ~/.fonts/
 mv MaterialIcons/* ~/.fonts/
+cd
 fc-cache -fv
 ```
 

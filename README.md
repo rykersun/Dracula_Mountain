@@ -123,6 +123,7 @@ sudo apt install font-manager
 mkdir .fonts
 cd .fonts
 # 把所有要安裝的 ttf 丟到這裡
+cd
 fc-cache -fv
 # 可以使用 font-manager 來確認字體是否安裝成功
 ```
