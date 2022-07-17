@@ -1,6 +1,8 @@
 # 備註
 
+```bash
 sudo apt install rofi papirus-icon-theme
+```
 
 [nerd font](https://www.nerdfonts.com/font-downloads)
 
