@@ -9,3 +9,9 @@ background = "#1e1f28"
 ```
 
 避免 blur 出問題
+
+# xclip
+
+```bash
+sudo apt install xclip
+```

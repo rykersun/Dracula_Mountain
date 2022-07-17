@@ -1,0 +1,2 @@
+# line 46
+PYGMENTIZE_STYLE="${PYGMENTIZE_STYLE:-dracula}"
