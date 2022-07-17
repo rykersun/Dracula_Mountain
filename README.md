@@ -44,6 +44,7 @@ sudo apt install meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-
 
 安裝 i3-gaps: 
 
+> 所在位置 ~/
 ```bash
 mkdir clone
 cd clone
@@ -56,6 +57,38 @@ sudo ninja install
 ```
 
 登出就可以選擇 i3 login 了
+
+### picom
+
+安裝 Dependencies: 
+
+```bash
+sudo apt install libx11-xcb-dev libxcb-damage0-dev libxcb-sync-dev libxcb-composite0-dev libxcb-present-dev uthash-dev libconfig-dev libgl-dev libdbus-1-dev
+```
+
+### rofi
+
+安裝 Dependencies: 
+
+```bash
+sudo apt install bison flex libxcb-ewmh-dev libgdk-pixbuf2.0-dev
+```
+
+### polybar
+
+安裝 Dependencies
+
+```bash
+sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libjsoncpp-dev
+```
+
+### ranger
+
+安裝 Dependencies
+
+```bash
+sudo apt install python3 python3-pip
+```
 
 ## Fonts
 
