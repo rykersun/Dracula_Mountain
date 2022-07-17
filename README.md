@@ -58,6 +58,8 @@ sudo ninja install
 
 登出就可以選擇 i3 login 了
 
+配置請參考 [i3](config/i3/README.md)
+
 ### picom
 
 安裝 Dependencies: 
@@ -65,6 +67,8 @@ sudo ninja install
 ```bash
 sudo apt install libx11-xcb-dev libxcb-damage0-dev libxcb-sync-dev libxcb-composite0-dev libxcb-present-dev uthash-dev libconfig-dev libgl-dev libdbus-1-dev
 ```
+
+配置請參考 [picom](config/picom/README.md)
 
 ### rofi
 
@@ -74,6 +78,8 @@ sudo apt install libx11-xcb-dev libxcb-damage0-dev libxcb-sync-dev libxcb-compos
 sudo apt install bison flex libxcb-ewmh-dev libgdk-pixbuf2.0-dev
 ```
 
+配置請參考 [rofi](config/rofi/README.md)
+
 ### polybar
 
 安裝 Dependencies
@@ -82,6 +88,8 @@ sudo apt install bison flex libxcb-ewmh-dev libgdk-pixbuf2.0-dev
 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libjsoncpp-dev
 ```
 
+配置請參考 [polybar](config/polybar/README.md)
+
 ### ranger
 
 安裝 Dependencies
@@ -89,6 +97,8 @@ sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx 
 ```bash
 sudo apt install python3 python3-pip
 ```
+
+配置請參考 [ranger](config/ranger/README.md)
 
 ## Fonts
 
