@@ -1,0 +1,78 @@
+# ===============================================================================================
+
+#  ██████╗ ██╗   ██╗██╗  ██╗███████╗██████╗     ███████╗██╗   ██╗███╗   ██╗
+#  ██╔══██╗╚██╗ ██╔╝██║ ██╔╝██╔════╝██╔══██╗    ██╔════╝██║   ██║████╗  ██║
+#  ██████╔╝ ╚████╔╝ █████╔╝ █████╗  ██████╔╝    ███████╗██║   ██║██╔██╗ ██║
+#  ██╔══██╗  ╚██╔╝  ██╔═██╗ ██╔══╝  ██╔══██╗    ╚════██║██║   ██║██║╚██╗██║
+#  ██║  ██║   ██║   ██║  ██╗███████╗██║  ██║    ███████║╚██████╔╝██║ ╚████║
+#  ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝
+#                                                                          
+
+# ===============================================================================================
+
+# 要註解的項目
+# $mod+d
+# $mod+w
+# $mod+Shift+q
+# bar
+
+# 視窗設定
+
+# 間隔
+gaps inner 20
+gaps outer 20
+
+# 邊框厚度
+for_window [class="^.*"] border pixel 10
+
+# 邊框顏色
+client.focused #555555 #555555 #ffffff #EE82EE #EE82EE
+
+# i3-radius 設定 (現在已無用)
+# smart_borders on
+# smart_borders no_gaps
+# border_radius 20
+
+# bumblebee-status 設定 (現在已無用)
+# bar setting
+# bar {
+#     font pango:Hack Nerd Font 14
+#     position top
+#     status_command ~/clone/bumblebee-status/bumblebee-status -m nic disk:root \
+#         memory battery date time pasink \
+#         -t nord-powerline
+# }
+
+# rofi 按鍵設定
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+p exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+n exec --no-startup-id rofi -show ssh
+bindsym $mod+w exec --no-startup-id rofi -show window
+bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -no-persist-history
+
+# 開機時啟動 feh (請將 sun 改為自己的使用者名稱)
+exec --no-startup-id feh --bg-scale '/home/sun/pictures/wallpaper.jpg'
+
+# 開機時啟動 compton (現在已無用)
+# exec --no-startup-id compton
+
+# 開機時啟動 picom
+exec --no-startup-id picom --experimental-backend
+
+# 開機時啟動 polybar
+exec_always --no-startup-id $HOME/polybar-collection/launch.sh
+
+# 自訂按鍵
+bindsym $mod+Shift+x kill
+bindsym $mod+Caps_Lock workspace next
+bindsym $mod+Tab workspace prev
+
+# 調整音量
+bindsym $mod+F10 exec pactl set-sink-mute @DEFAULT_SINK@ toggle # Mute
+bindsym $mod+F11 exec pactl set-sink-volume @DEFAULT_SINK@ -5%  # Up
+bindsym $mod+F12 exec pactl set-sink-volume @DEFAULT_SINK@ +5%  # Down
+
+# 螢幕截圖
+bindsym Print exec --no-startup-id maim "/home/$USER/pictures/$(date).png"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/pictures/$(date).png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/pictures/$(date).png"
