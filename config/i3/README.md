@@ -15,5 +15,5 @@ sudo apt install feh maim
 
 > 所在位置 Dracula_Mountain/
 ```bash
-echo config/i3/config >> ~/.config/i3/config
+cat config/i3/config >> ~/.config/i3/config
 ```
