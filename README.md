@@ -46,8 +46,6 @@ sudo apt install meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-
 
 > 所在位置 ~/
 ```bash
-mkdir clone
-cd clone
 git clone https://github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 mkdir -p build && cd build
@@ -65,7 +63,19 @@ sudo ninja install
 安裝 Dependencies: 
 
 ```bash
-sudo apt install libx11-xcb-dev libxcb-damage0-dev libxcb-sync-dev libxcb-composite0-dev libxcb-present-dev uthash-dev libconfig-dev libgl-dev libdbus-1-dev
+sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-sync-dev libgl-dev asciidoc
+```
+
+安裝 picom
+
+> 所在位置 ~/
+```bash
+git clone https://github.com/jonaburg/picom.git
+cd picom/
+git submodule update --init --recursive
+meson --buildtype=release . build
+ninja -C build
+ninja -C build install
 ```
 
 配置請參考 [picom](config/picom/README.md)

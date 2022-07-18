@@ -1,38 +1,19 @@
 # 備註
 
-## 註解
+## TODO
 
-* 請先將 [config](config) 裡面標示要註解的項目註解
-* 將 [config](config) 的內容加入到 `~/.config/i3/config` 裡面
+* 記得將 [config](config) 裡面標示要註解的項目註解
+* 將 [config](config) 第 54 行的 sun 改成自己的使用者名稱
+* 將桌布命名成 `wallpaper.jpg` (或著[直接下載 Dracula_Mountain 的桌布](../../wallpaper/wallpaper.jpg)) 並且放到圖片資料夾
 
-## feh
-
-安裝 `feh`: 
-
+> 所在位置 ~/
 ```bash
-sudo apt install feh
-```
-
-將 [config](config) 第 54 行的 sun 改成自己的使用者名稱
-
-將桌布命名成 `wallpaper.jpg` (或著[直接下載 Dracula_Mountain 的桌布](../../wallpaper/wallpaper.jpg))
-
-將桌布放到圖片資料夾
-
-### 建立圖片捷徑
-
-使用指令建立圖片資料夾的連結: 
-
-```bash
+cd
 ln -s ~/圖片 pictures
+sudo apt install feh maim
 ```
 
-## 螢幕截圖
-
-安裝 `maim`: 
-
+> 所在位置 Dracula_Mountain/
 ```bash
-sudo apt install maim
+echo config/i3/config >> ~/.config/i3/config
 ```
-
-參考上面建立 `pictures`
